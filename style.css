@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey-700: hsl(0, 0%, 20%);
+--Grey-800: hsl(0, 0%, 12%);
+--Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: "Inter", sans-serif;
+background-color: var(--Grey-900);
+color: var(--White);
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 20px;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;
+max-width: 400px;
+background-color: var(--Grey-800);
+border-radius: 15px;
+padding: 30px;
+text-align: center;
+}
+
+.image img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 20px;
+margin-top: 15px;
+}
+
+.info h1 {
+font-size: clamp(20px, 5vw, 24px);
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+.info h2 {
+font-size: clamp(14px, 4vw, 18px);
+font-weight: 600;
+color: var(--Green);
+}
+
+.info h3 {
+font-size: clamp(13px, 3vw, 14px);
+font-weight: 400;
+margin: 25px 0;
+}
+
+.Social_links {
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.Social_links a {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 15px;
+background-color: var(--Grey-700);
+border-radius: 8px;
+text-decoration: none;
+color: var(--White);
+font-weight: 600;
+font-size: clamp(13px, 3vw, 16px);
+transition: all 0.3s ease;
+}
+
+.Social_links a:hover {
+background-color: var(--Green);
+color: var(--Grey-900);
+transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+.container {
+padding: 25px 20px;
+max-width: 90%;
+}
+
+.image img {
+width: 80px;
+height: 80px;
+}
+
+.info h3 {
+margin: 20px 0;
+}
+
+.Social_links {
+gap: 12px;
+}
+
+.Social_links a {
+padding: 12px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+.container {
+max-width: 450px;
+padding: 35px;
+}
+}
+
+@media (min-width: 769px) {
+.container {
+padding: 40px;
+}
+}
