@@ -45,6 +45,12 @@ border-radius: 50%;
 object-fit: cover;
 margin-bottom: 20px;
 margin-top: 15px;
+-webkit-user-drag: none;
+user-drag: none;
+pointer-events: none;
+pointer-events: none;
+user-select: none;
+-webkit-user-select: none;
 }
 
 .info h1 {
